@@ -1,6 +1,6 @@
 <br/>
 <div align="center">
-    <img src="img/sic.png" alt="Logo" width="120">
+    <img src="img/sic.png" alt="Logo" width="200">
     <h3 align="center"> Expertise Class - Project 3 (Cloud Computing)</h3>
      <p align="center">
         Rangkuman soal dan topologi
