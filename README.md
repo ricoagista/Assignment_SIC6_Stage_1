@@ -1,6 +1,6 @@
 <br/>
 <div align="center">
-    <img src="img/sic.png" alt="Logo" width="120">
+    <img src="img/sic.png" alt="Logo" width="160">
     <h3 align="center">Assignment SIC6 - Stage 1</h3>
      <p align="center">
         Rangkuman soal dan topologi
