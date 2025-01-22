@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "author": "Rico Agista",
+    "editor": "wokwi",
+    "parts": [
+      {
+        "type": "board-esp32-devkit-c-v4",
+        "id": "esp",
+        "top": 0,
+        "left": 0,
+        "attrs": { "env": "micropython-20231227-v1.22.0" }
+      },
+      { "type": "wokwi-led", "id": "led1", "top": 226.8, "left": 32.6, "attrs": { "color": "red" } },
+      {
+        "type": "wokwi-resistor",
+        "id": "r1",
+        "top": 224.2,
+        "left": -87.25,
+        "rotate": 270,
+        "attrs": { "value": "1000" }
+      },
+      { "type": "wokwi-dht22", "id": "dht1", "top": -134.1, "left": 23.4, "attrs": {} }
+    ],
+    "connections": [
+      [ "esp:TX", "$serialMonitor:RX", "", [] ],
+      [ "esp:RX", "$serialMonitor:TX", "", [] ],
+      [ "r1:1", "led1:C", "black", [ "h0", "v48", "h105.6" ] ],
+      [ "r1:2", "esp:GND.1", "black", [ "h0", "v-37.2" ] ],
+      [ "led1:A", "esp:2", "red", [ "v38.4", "h105.6", "v-144" ] ],
+      [ "dht1:VCC", "esp:3V3", "red", [ "v0", "h-38.4" ] ],
+      [ "dht1:GND", "esp:GND.2", "black", [ "v0", "h38.4" ] ],
+      [ "dht1:SDA", "esp:15", "green", [ "v9.6", "h115.3", "v9.6" ] ]
+    ],
+    "dependencies": {}
+  }
